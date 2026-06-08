@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('pvc-btn').classList.remove('active');
         resetGame();
         if (!socket || !socket.connected) {
-            socket = io();
+            socket = io("https://tictactoe-o8gs.onrender.com");
             setupSocketListeners();
         }
     };
